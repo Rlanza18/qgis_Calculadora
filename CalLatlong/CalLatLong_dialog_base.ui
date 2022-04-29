@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CalLatLongDialogBase</class>
+ <widget class="QDialog" name="CalLatLongDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>562</width>
+    <height>224</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calculadora Lat/Long</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>20</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="text">
+    <string>LATITUD</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spbLatG">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>50</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="suffix">
+    <string>°</string>
+   </property>
+   <property name="maximum">
+    <number>90</number>
+   </property>
+   <property name="value">
+    <number>14</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spbLatM">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>50</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="suffix">
+    <string>'</string>
+   </property>
+   <property name="maximum">
+    <number>59</number>
+   </property>
+   <property name="value">
+    <number>30</number>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="spbLatS">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>50</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="prefix">
+    <string/>
+   </property>
+   <property name="suffix">
+    <string>''</string>
+   </property>
+   <property name="maximum">
+    <double>60.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>30.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cmbLatH">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>50</y>
+     <width>69</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <italic>true</italic>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>N</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>S</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QDoubleSpinBox" name="spbLatGD">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>50</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="suffix">
+    <string> GD</string>
+   </property>
+   <property name="decimals">
+    <number>6</number>
+   </property>
+   <property name="minimum">
+    <double>-90.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>90.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="spbLonGD">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>130</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="suffix">
+    <string> GD</string>
+   </property>
+   <property name="decimals">
+    <number>6</number>
+   </property>
+   <property name="minimum">
+    <double>-180.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>180.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>100</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="text">
+    <string>LONGITUD</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spbLonG">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>130</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="suffix">
+    <string>°</string>
+   </property>
+   <property name="maximum">
+    <number>180</number>
+   </property>
+   <property name="value">
+    <number>87</number>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="spbLonS">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>130</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="prefix">
+    <string/>
+   </property>
+   <property name="suffix">
+    <string>''</string>
+   </property>
+   <property name="maximum">
+    <double>60.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>30.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spbLonM">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>130</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="suffix">
+    <string>'</string>
+   </property>
+   <property name="maximum">
+    <number>59</number>
+   </property>
+   <property name="value">
+    <number>30</number>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cmbLonH">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>130</y>
+     <width>69</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <italic>true</italic>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>W</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>E</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

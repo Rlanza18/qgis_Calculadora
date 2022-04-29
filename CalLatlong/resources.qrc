@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/CalLatLong" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
