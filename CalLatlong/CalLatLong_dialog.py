@@ -52,6 +52,15 @@ class CalLatLongDialog(QtWidgets.QDialog, FORM_CLASS):
         #Disparador para grados decimales
         self.spbLatGD.editingFinished.connect (self.latDDtoDMS)
         
+        #disparadores de longitud
+        self.spbLonG.valueChanged.connect(self.lonDMStoDD)
+        self.spbLonM.valueChanged.connect(self.lonDMStoDD)
+        self.spbLonS.valueChanged.connect(self.lonDMStoDD)
+        self.cmbLonH.currentTextChanged.connect(self.lonDMStoDD)
+        
+        #Disparador para grados decimales
+        self.spbLonGD.editingFinished.connect (self.lonDDtoDMS)
+        
     def latDMStoDD(self):
         ideg = self.spbLatG.value()
         imin = self.spbLatM.value()
@@ -81,15 +90,7 @@ class CalLatLongDialog(QtWidgets.QDialog, FORM_CLASS):
             self.cmbLatH.setCurrentText("S")
         else:
             self.cmbLatH.setCurrentText("N")
-            
-    #disparadores de longitud
-        self.spbLonG.valueChanged.connect(self.lonDMStoDD)
-        self.spbLonM.valueChanged.connect(self.lonDMStoDD)
-        self.spbLonS.valueChanged.connect(self.lonDMStoDD)
-        self.cmbLonH.currentTextChanged.connect(self.lonDMStoDD)
-        
-        #Disparador para grados decimales
-        self.spbLonGD.editingFinished.connect (self.lonDDtoDMS)
+           
        
     def lonDMStoDD(self):
         ideg = self.spbLonG.value()
